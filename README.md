@@ -69,13 +69,13 @@ Think of it as a robot that reads Google Cloud changelog pages and creates neat 
 
 ```bash
 # Get last 6 months of updates as HTML
-./release_notes_scraper.py -u https://cloud.google.com/run/docs/release-notes -m 6 -o html -f summary.html
+./gcpwatch.py -u https://cloud.google.com/run/docs/release-notes -m 6 -o html -f summary.html
 
 # Get last 3 months as Markdown
-./release_notes_scraper.py -u https://example.com/changelog -m 3 -o markdown
+./gcpwatch.py -u https://example.com/changelog -m 3 -o markdown
 
 # Quick text summary to screen
-./release_notes_scraper.py -u https://example.com/releases
+./gcpwatch.py -u https://example.com/releases
 ```
 
 ## Bottom Line
