@@ -1,3 +1,4 @@
+
 # Release Notes Scraper
 
 ## What This Program Does
@@ -195,13 +196,13 @@ Compute / Infrastructure
 * Google Distributed Cloud Bare: Metal https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/release-notes
 * Google Distributed Cloud VMware: https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/release-notes
 
-Google Kubernetes Engine (GKE):
-* https://cloud.google.com/kubernetes-engine/docs/release-notes
-* https://cloud.google.com/kubernetes-engine/docs/release-notes-rapid
-* https://cloud.google.com/kubernetes-engine/docs/release-notes-regular
-* https://cloud.google.com/kubernetes-engine/docs/release-notes-stable
-* https://cloud.google.com/kubernetes-engine/docs/release-notes-extended
-* https://cloud.google.com/kubernetes-engine/docs/release-notes-nochannel
+Google Kubernetes Engine (GKE)
+* Main GKE Notes https://cloud.google.com/kubernetes-engine/docs/release-notes
+* GKE Rapid https://cloud.google.com/kubernetes-engine/docs/release-notes-rapid
+* GKE Regular https://cloud.google.com/kubernetes-engine/docs/release-notes-regular
+* GKE Stable https://cloud.google.com/kubernetes-engine/docs/release-notes-stable
+* GKE Extended https://cloud.google.com/kubernetes-engine/docs/release-notes-extended
+* GKE Nochannel https://cloud.google.com/kubernetes-engine/docs/release-notes-nochannel
 
 * VMware Engine: https://cloud.google.com/vmware-engine/docs/release-notes
 
@@ -238,7 +239,7 @@ Workspace
 * Management: Release notes for Google Cloud Search API: https://developers.google.com/workspace/cloud-search/release-notes
 * Tools: Release notes for the Google Docs API: https://developers.google.com/workspace/docs/release-notes
 
-## Unsupported
+Unsupported
 * https://cloud.google.com/sdk/docs/release-notes
 * https://github.com/google-gemini/gemini-cli/releases
 * https://ai.google.dev/gemini-api/docs/changelog
@@ -262,4 +263,5 @@ Workspace
 
 ## Screengrabs
 <img width="1262" height="713" alt="Screenshot 2025-10-04 at 11 20 04" src="https://github.com/user-attachments/assets/0c8dc809-8d97-4005-aa22-5c08682282b6" />
+
 
