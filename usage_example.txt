@@ -1,0 +1,38 @@
+
+```bash
+./gcpwatch.py -m 12 -u https://cloud.google.com/run/docs/release-notes -o json -f my_cloudrun_release_notes.json
+./gcpwatch.py -m 12 -u https://cloud.google.com/run/docs/release-notes -o html -f my_cloudrun_release_notes.html
+./gcpwatch.py -m 12 -u https://cloud.google.com/run/docs/release-notes -o text -f my_cloudrun_release_notes.txt
+
+./gcpwatch.py -m 12 -u https://cloud.google.com/kubernetes-engine/docs/release-notes -o json -f my_gke_release_notes.json
+./gcpwatch.py -m 12 -u https://cloud.google.com/kubernetes-engine/docs/release-notes -o html -f my_gke_release_notes.html
+./gcpwatch.py -m 12 -u https://cloud.google.com/kubernetes-engine/docs/release-notes -o text -f my_gke_release_notes.txt
+
+./gcpwatch.py -m 12 -u https://cloud.google.com/release-notes -o html -f my_gcp_release_notes.html
+
+./gcpwatch.py -m 12  -u https://cloud.google.com/kubernetes-engine/docs/release-notes --mask "Change" -o html -f my_gke_release_notes.html
+
+./gcpwatch.py -m 12 -u https://cloud.google.com/kubernetes-engine/docs/release-notes -o json -f my_gke_release_notes.json
+```
+
+```bash
+jq -r '.releases[] as $release | $release.items[] | select(.category == "public-preview") |
+  "--------------------------------------------------------------------------------",
+  "Release Date:   \($release.date_str)",
+  "Category:       \(.category)",
+  "Text:",
+  (.text | sub("\\s+"; " "; "g") | sub("For more information.*"; "")),
+  "URLs:",
+  (.urls | .[]? | "  - " + .),
+  ""' my_cloudrun_release_notes.json
+
+jq -r '.releases[] as $release | $release.items[] | select(.category == "public-preview") |
+  "--------------------------------------------------------------------------------",
+  "Release Date:   \($release.date_str)",
+  "Category:       \(.category)",
+  "Text:",
+  (.text | sub("\\s+"; " "; "g") | sub("For more information.*"; "")),
+  "URLs:",
+  (.urls | .[]? | "  - " + .),
+  ""' my_gke_release_notes.json
+```
