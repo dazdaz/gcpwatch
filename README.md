@@ -1,3 +1,88 @@
+# Release Notes Scraper
+
+## What This Program Does
+
+This is a **web scraping tool** that automatically downloads and organizes release notes from software documentation websites.
+Think of it as a robot that reads Google Cloud changelog pages and creates neat summaries for you.
+
+### The Basic Process:
+
+1. **Visits a Google Cloud release notes webpage which you point it to**
+2. **Finds all the release announcements** with dates
+3. **Categorizes each update** (new features, bug fixes, breaking changes, etc.)
+4. **Filters by time** (only shows updates from the last X months)
+5. **Formats the output** in your preferred style (plain text, Markdown, JSON, or HTML)
+
+### What It Looks For:
+
+- **Dates** - When updates were released
+- **Update types** - Automatically tags items as:
+  - New features (GA - Generally Available)
+  - Preview features (Beta/Early Access)
+  - Bug fixes
+  - Breaking changes
+  - Security patches
+  - Deprecations
+  - Known issues
+- **Links** - Captures related documentation URLs
+
+## Key Benefits
+
+### 1. **Saves Time**
+- Instead of manually reading through dozens of release notes pages, you get a filtered summary in seconds
+- No need to scroll through months/years of updates
+
+### 2. **Customizable Time Range**
+- Only see updates from the last 3 months, 6 months, 12 months, etc.
+- Avoid information overload
+
+### 3. **Smart Categorization**
+- Automatically identifies what type of update each item is
+- Makes it easy to spot critical changes (breaking changes, security fixes)
+- Helps prioritize what you need to review
+
+### 4. **Multiple Output Formats**
+- **Text**: Simple, readable format for quick review
+- **Markdown**: Perfect for documentation or GitHub
+- **HTML**: Beautiful, styled webpage you can share with your team
+- **JSON**: Machine-readable format for further processing
+
+### 5. **Statistical Summary**
+- Shows totals: how many releases, how many items
+- Breaks down items by category
+- Helps you understand the update velocity
+
+### 6. **Works Across Platforms**
+- Has built-in support for Google Cloud documentation
+- Generic mode works with most documentation sites
+- Adapts to different page structures
+
+## Real-World Use Cases
+
+- **DevOps Teams**: Stay current with cloud service updates without reading everything
+- **Security Teams**: Quickly identify security patches across multiple services
+- **Product Managers**: Track new feature releases
+- **Developers**: Find breaking changes before upgrading dependencies
+- **Technical Writers**: Aggregate changes for customer-facing release notes
+
+## Example Usage
+
+```bash
+# Get last 6 months of updates as HTML
+./release_notes_scraper.py -u https://cloud.google.com/run/docs/release-notes -m 6 -o html -f summary.html
+
+# Get last 3 months as Markdown
+./release_notes_scraper.py -u https://example.com/changelog -m 3 -o markdown
+
+# Quick text summary to screen
+./release_notes_scraper.py -u https://example.com/releases
+```
+
+## Bottom Line
+
+This tool transforms the tedious task of monitoring software updates into an automated, organized process. It's like having an assistant who reads all the release notes for you and highlights what matters.
+
+
 ## Instructions
 
 ```bash
