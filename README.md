@@ -174,3 +174,7 @@ Workspace
 * https://firebase.google.com/support/release-notes/security-rules # Won't work
 * https://firebase.google.com/support/release-notes/cli # Should work
 * https://firebase.google.com/support/release-notes/firebase-studio # Should work
+
+## Screengrabs
+<img width="1262" height="713" alt="Screenshot 2025-10-04 at 11 20 04" src="https://github.com/user-attachments/assets/0c8dc809-8d97-4005-aa22-5c08682282b6" />
+
