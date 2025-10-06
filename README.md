@@ -3,8 +3,8 @@
 
 ## What This Program Does
 
-This is a **web scraping tool** that automatically downloads and organizes release notes from software documentation websites.
-Think of it as a robot that reads Google Cloud changelog pages and creates neat summaries for you.
+This is a **web scraping tool** that automatically downloads and organizes release notes from Google Cloud service release notes.
+Think of it as a robot that reads Google Cloud Service release notes and creates neat summaries for you.
 
 ### The Basic Process:
 
